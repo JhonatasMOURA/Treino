@@ -37,5 +37,5 @@ jobs:
         tags: ${{ steps.version.outputs.version_tag }}, latest
         registry: docker.io
         dockerfile: dockerfile
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        username: ${{ secrets.DOCKERHYB_USUARIO }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
