@@ -34,7 +34,7 @@ jobs:
       name: Deploy da Imagem Docker
       with:
         image: jhonatasalves/teste
-        tags: ${{ steps.version.outputs.version_tag }}, latest
+        tags: ${{github.run_number}}
         registry: docker.io
         dockerfile: dockerfile
         username: ${{ secrets.DOCKERHYB_USUARIO }}
